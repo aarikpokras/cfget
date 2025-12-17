@@ -1,2 +1,2 @@
 # cfget
-A database of configuration file snippets
+A terminal-accessible database of configuration file snippets
