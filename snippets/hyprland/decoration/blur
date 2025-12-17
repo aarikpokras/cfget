@@ -1,0 +1,8 @@
+# Basic blur configuration. Inside `decoration`.
+blur {
+  enabled = true
+  size = 8
+  passes = 2
+  new_optimizations = true
+  noise = 0.03
+}
