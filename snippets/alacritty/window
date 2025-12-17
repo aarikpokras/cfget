@@ -1,0 +1,6 @@
+# Simple window config. Full [window] doc: https://alacritty.org/config-alacritty.html#window
+[window]
+dimensions = { columns = 80, lines = 20 }
+padding = { x = 10, y = 10 }
+opacity = 0.9
+blur = true
