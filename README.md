@@ -1,5 +1,5 @@
 # cfget
-A terminal-accessible database of configuration file snippets.
+Config file snippets by topic.
 
 Usage:
 ```
