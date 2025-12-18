@@ -11,7 +11,7 @@ import (
 
 func main() {
   if len(os.Args) < 3 {
-    fmt.Println("Usage: " + os.Args[0] + " [options] [tags]\nOPTIONS:\n-s			Get first snippet.\n--ctmax [count]		Get [count] snippets.")
+    fmt.Println("Usage: " + os.Args[0] + " [options] [tags]\nOPTIONS:\n-s			Get first snippet.\n--ctmax [count]		Get [count] snippets.\n--gos [count]		get the [count]th snippet.")
     os.Exit(2)
   }
   if (os.Args[1] == "-s") {
@@ -56,6 +56,31 @@ func main() {
       fmt.Println(string(bdy))
       fmt.Println("********************")
     }
+  } else if (os.Args[1] == "--gos") {
+    if len(os.Args) < 4 {
+      fmt.Println("--gos requires a count and tags.")
+      os.Exit(4)
+    }
+    _, err := strconv.Atoi(os.Args[2])
+    if err != nil {
+      fmt.Println("Argument 2 is not a number.")
+      os.Exit(8)
+    }
+    rsp, err := http.Get("https://raw.githubusercontent.com/aarikpokras/cfget/refs/heads/master/snippets/" + os.Args[3] + os.Args[2])
+    if err != nil {
+      log.Fatal(err)
+    }
+    defer rsp.Body.Close()
+    if rsp.StatusCode == http.StatusNotFound {
+      fmt.Println("Could not find that snippet.")
+      os.Exit(1)
+    }
+    if rsp.StatusCode != http.StatusOK {
+      fmt.Println("HTTP error " + rsp.Status)
+      os.Exit(1)
+    }
+    bdy, err := io.ReadAll(rsp.Body)
+    fmt.Println(string(bdy))
   } else {
     fmt.Printf("Invalid flag! Ensure counts and flags are separated and that you're using correct flags!\n\033[0;34mFrom exception in main -- unrecognized argument\033[0m\n")
     os.Exit(4)
