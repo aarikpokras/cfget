@@ -1,1 +1,2 @@
 - [ ] Add option for whole files (`-w`?)
+- [ ] Install file
