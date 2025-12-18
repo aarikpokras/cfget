@@ -14,7 +14,7 @@ Where `[tags]` is the category of configuration file you're looking for, like `h
 |----|-------|
 |`--ctmax [count]`|Get up to the `[count]`th snippet.|
 |`-s`|Get the first snippet.|
-|`--gos`|Get a specific snippet for tags by number.|
+|`--gos [num]`|Get the `[num]`th snippet for tags by number.|
 
 ## Installation
 Clone cfget:
