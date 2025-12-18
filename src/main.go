@@ -11,7 +11,7 @@ import (
 
 func main() {
   if len(os.Args) < 3 {
-    fmt.Println("Usage: " + os.Args[0] + " -s [tags]")
+    fmt.Println("Usage: " + os.Args[0] + " [options] [tags]\nOPTIONS:\n-s			Get first snippet.\n--ctmax [count]		Get [count] snippets.")
     os.Exit(2)
   }
   if (os.Args[1] == "-s") {
