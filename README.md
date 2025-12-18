@@ -1,5 +1,7 @@
 # cfget
-Config file snippets by topic.
+Terminal-accessible config file snippets by topic.
+
+Consolidates config files so that you don't have to go searching all over the Internet for them.
 
 Usage:
 ```
