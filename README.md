@@ -19,6 +19,10 @@ Where `[tags]` is the category of configuration file you're looking for, like `h
 The `CFGET_HIDE_ERRORS` environment variable can have the value "0" or "1" to decide whether to hide errors. "0" shows all errors and "1" hides all errors.
 
 ## Installation
+To build cfmake from the source, you need:
+* `go`
+* `make`
+
 Clone cfget:
 ```bash
 git clone https://github.com/aarikpokras/cfget.git
@@ -26,7 +30,7 @@ git clone https://github.com/aarikpokras/cfget.git
 
 Build the program:
 ```bash
-go build main.go
+make
 ```
 
 Or you can get the build from the artifacts page.
