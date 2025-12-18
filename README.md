@@ -9,7 +9,12 @@ cfget [options] [tags]
 ```
 Where `[tags]` is the category of configuration file you're looking for, like `hyprland/decoration/blur` or `alacritty/window`.
 
-`[options]` can be either `--ctmax` or `-s`; `--ctmax` followed by a count, like `--ctmax X` will get `X` snippets. `-s` will only get the first.
+`options`:
+|Flag|Meaning|
+|----|-------|
+|`--ctmax [count]`|Get up to the `[count]`th snippet.|
+|`-s`|Get the first snippet.|
+|`--gos`|Get a specific snippet for tags by number.|
 
 ## Installation
 Clone cfget:
