@@ -33,7 +33,9 @@ Build the program:
 make
 ```
 
-Or you can get the build from the artifacts page.
+Or you can get the build from the artifacts page and either:
+* Add an alias for it in your rc file
+* Put it in a directory and add it to your `PATH`
 
 ## Contributing
 To contribute a snippet, make a pull request with the snippet in its proper format in the proper directory. Additionally, at the top of the snippet, add a link to the full documentation for that section.
