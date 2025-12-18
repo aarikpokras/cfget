@@ -21,4 +21,4 @@ go build main.go
 Or you can get the build from the artifacts page.
 
 ## Contributing
-To contribute a snippet, make a pull request with the snippet in its proper format in the proper directory.
+To contribute a snippet, make a pull request with the snippet in its proper format in the proper directory. Additionally, at the top of the snippet, add a link to the full documentation for that section.
