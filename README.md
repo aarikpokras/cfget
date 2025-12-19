@@ -22,7 +22,7 @@ Where `[tags]` is the category of configuration file you're looking for, like `h
 |`--gos [num]`|Get the `[num]`th snippet for tags by number.|
 
 > [!TIP]
-> The `CFGET_HIDE_ERRORS` environment variable can have the value "0" or "1" to decide whether to hide errors. "0" shows all errors and "1" hides all errors.
+> The `CFGET_HIDE_ERRORS` environment variable can have the value `0` or `1` to decide whether to hide errors. "0" shows all errors and "1" hides all errors.
 
 ## Installation
 To build cfmake from the source, you need:
