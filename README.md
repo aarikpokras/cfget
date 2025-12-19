@@ -1,6 +1,11 @@
 # cfget
 Terminal-accessible config file snippets by topic.
 
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/aarikpokras/cfget/.github%2Fworkflows%2Fgo.yml)
+![GitHub License](https://img.shields.io/github/license/aarikpokras/cfget)
+![GitHub repo size](https://img.shields.io/github/repo-size/aarikpokras/cfget)
+![GitHub Release](https://img.shields.io/github/v/release/aarikpokras/cfget)
+
 Consolidates config files so that you don't have to go searching all over the Internet for them.
 
 Usage:
