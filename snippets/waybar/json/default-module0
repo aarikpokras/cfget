@@ -1,3 +1,4 @@
+# For a default module inside of config or config.jsonc
 "module": {
   "format": "{}",
   "on-scroll-up": "exec",
