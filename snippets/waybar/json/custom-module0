@@ -1,0 +1,7 @@
+# For a custom module config inside config or config.jsonc.
+"custom/element": {
+  "exec": "",
+  "interval": 100,
+  "format": "{}",
+  "tooltip": bool
+},
