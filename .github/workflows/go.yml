@@ -3,9 +3,9 @@ name: Go
 on:
   push:
     paths:
-      - "/main.go"
-      - "/go.mod"
-      - "/.github/**"
+      - "main.go"
+      - "go.mod"
+      - ".github/**"
   pull_request:
     branches: [ "master" ]
 
