@@ -25,6 +25,7 @@ Where `[tags]` is the category of configuration file you're looking for, like `h
 > The `CFGET_HIDE_ERRORS` environment variable can have the value `0` or `1` to decide whether to hide errors. "0" shows all errors and "1" hides all errors.
 
 ## Installation
+### Build from source
 To build cfmake from the source, you need:
 * `go`
 * `make`
@@ -39,6 +40,7 @@ Build the program:
 make
 ```
 
+### Get artifact
 Or you can get the build from the artifacts page and either:
 * Add an alias for it in your rc file
 * Put it in a directory and add it to your `PATH`
