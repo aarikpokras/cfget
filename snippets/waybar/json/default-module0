@@ -1,0 +1,6 @@
+"module": {
+  "format": "{}",
+  "on-scroll-up": "exec",
+  "on-scroll-down": "exec",
+  "on-click": "exec"
+}
